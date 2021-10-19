@@ -1,0 +1,5 @@
+# Debe descargarse en la carpeta el archivo yolov3.weights subido a google drive ya que no es posible subirlo a GitHub por el tamaño del fichero:
+
+# Url para descargar:
+
+https://drive.google.com/drive/folders/1L3M-NTI3sRmoYcyqUn48hOoeseBQ5FPZ?usp=sharing

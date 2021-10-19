@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+
+    <link rel="shortcut icon" href="static/favicon/favicon.ico">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="static/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="static/favicon/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="static/favicon/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/favicon/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="static/favicon/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16.png">
+    <link rel="apple-touch-icon" href="static/favicon/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/favicon/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/favicon/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/favicon/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/favicon/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/favicon/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/favicon/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/favicon/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/favicon-180.png">
+    <meta name="msapplication-TileColor" content="#051720">
+    <meta name="msapplication-TileImage" content="static/favicon/favicon-144.png">
+    <meta name="msapplication-config" content="static/favicon/browserconfig.xml">
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #051720;
+            color: #fafbfd;
+        }
+
+        @media screen and (max-width: 768px) {
+            body #linhas-superiores img {
+                width: 100vw;
+                height: auto;
+            }
+            body #linhas-inferiores img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            body #linhas-superiores img {
+                width: 50vw;
+                height: auto;
+            }
+            body #linhas-inferiores img {
+                width: 50vw;
+                height: auto;
+            }
+        }
+
+        body #linhas-superiores img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #linhas-inferiores img {
+            transform: scale(-1);
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        body #wrapper {
+            min-height: 100vh;
+            max-width: 720px;
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        body #wrapper .header {
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .header .modelev-logo {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+
+        body #wrapper li a {
+            display: block;
+            color: #051720;
+            background-color: #33a1da;
+            padding: 18px 57px;
+            transition: 0.3s;
+        }
+
+        body #wrapper li a:hover {
+            background-color: #49cdc9;
+            transition: 0.3s;
+        }
+
+        body #wrapper li {
+            margin: .9rem;
+        }
+
+        body #wrapper .spacer {
+            display: block;
+            padding: 1.5rem 0;
+        }
+
+        body #wrapper .footer {
+            margin-bottom: 1rem;
+        }
+
+        body #wrapper .footer .footer-img {
+            width: 128px;
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="linhas-superiores">
+        <img src="static/assets/linhas.png">
+    </div>
+
+    <div id="linhas-inferiores">
+        <img src="static/assets/linhas.png">
+    </div>
+
+    <div id="wrapper">
+        <div class="header">
+            <img class="modelev-logo" src="static/assets/flowese.png"><br>
+            @{{ user }}
+        </div>
+
+        <li><a href="/video_feed/personas">Detección de Rostros</a></li>
+
+        <li><a href="/video_feed/objetos">Detección de Objetos</a></li>
+
+        <li><a href="/video_feed/matriculas">Detección de Matrículas</a></li>
+
+        <div class="spacer"></div>
+        <div class="footer">
+            Powered by HubSpain
+        </div>
+    </div>
+</body>
+</html>
