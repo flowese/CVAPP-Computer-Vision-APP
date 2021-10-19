@@ -1,4 +1,4 @@
-# Computer Vision APP - Created by @flowese
+# Computer Vision APP
 ## _Real-time object recognition from video sources._
 
 ![alt text](https://github.com/flowese/CVAPP-Computer-Vision-APP/raw/main/CVAPP-Computer-Vision%20Desktop/config/screenshot.png)
