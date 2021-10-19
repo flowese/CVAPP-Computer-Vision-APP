@@ -1,7 +1,7 @@
 # Computer Vision APP - Created by @flowese
 ## _Real-time object recognition from video sources._
 
-![alt text](https://github.com/flowese/Computer-Vision-APP/blob/main/config/screenshot.png)
+![alt text](https://github.com/flowese/CVAPP-Computer-Vision-APP/raw/main/CVAPP-Computer-Vision%20Desktop/config/screenshot.png)
 
 CVAPP is an application in python that identifies objects in real time from video sources using computer vision. 
 It can be used for surveillance in hotels, hospitals, airports or even shops. Identify objects with high precision. It allows to create automatisms or rules according to the detected object.
